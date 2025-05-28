@@ -11,7 +11,8 @@ function loadVideoFromURL() {
     if (videoFilename) {
         const videoPlayer = document.getElementById('videoPlayer');
         // videoPlayer.src = `/videos/${videoFilename}`; // Local path
-        videoPlayer.src = `https://storage.googleapis.com/robot_traj_videos/all/${videoFilename}`;
+        // videoPlayer.src = `https://storage.googleapis.com/robot_traj_videos/all/${videoFilename}`;
+        videoPlayer.src = `/videos/${videoFilename}`; // Local path
         videoPlayer.load();
         resetTimer(); // Reset the timer for tracking how long the user spends on this video
     } else {
