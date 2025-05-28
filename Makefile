@@ -33,7 +33,7 @@ start-verbose:
 stop:
 	@docker compose down
 
-shell-tdw:
+shell:
 	@docker exec -ti -u $$(whoami) -w /root/task_decomposition_website tdw bash -l
 
 shell-db:
